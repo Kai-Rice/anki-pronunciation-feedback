@@ -42,3 +42,6 @@ class AudioSessionStore:
     def clear(self, card_id: int) -> None:
         if card_id in self.sessions:
             del self.sessions[card_id]
+
+    def clear_except(self, card_id: int) -> None:
+        self.sessions = {key: value for key, value in self.sessions.items() if key == card_id}
