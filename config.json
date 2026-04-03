@@ -1,12 +1,22 @@
 {
-  "enabled_note_types": ["Basic", "Basic (type in the answer)"],
-  "target_text_field": "TargetWord",
-  "target_language": "ko_KR",
+  "note_type_rules": [
+    {
+      "note_type": "Basic (type in the answer)",
+      "target_text_field": "Back",
+      "target_language": "ko_KR"
+    }
+  ],
   "play_target_on_reveal": true,
-  "speed_options": [0.7, 0.85, 1.0],
+  "mine_speed_options": [0.7, 0.85, 1.0],
+  "target_speed_options": [0.7, 0.85, 1.0],
   "tts_backend": "local_provider",
-  "tts_voice": "",
+  "local_tts_engine": "piper",
+  "piper_binary_path": "piper",
+  "piper_model_path": "",
+  "piper_speaker": "",
+  "api_provider": "",
+  "api_key": "",
   "cache_generated_audio": true,
-  "show_pronunciation_score": true,
-  "linux_backend_fallback": "api"
+  "show_pronunciation_score": false,
+  "linux_backend_fallback": "local_provider"
 }
