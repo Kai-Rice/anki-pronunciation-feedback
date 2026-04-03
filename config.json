@@ -1,0 +1,12 @@
+{
+  "enabled_note_types": ["Basic", "Basic (type in the answer)"],
+  "target_text_field": "TargetWord",
+  "target_language": "ko_KR",
+  "play_target_on_reveal": true,
+  "speed_options": [0.7, 0.85, 1.0],
+  "tts_backend": "local_provider",
+  "tts_voice": "",
+  "cache_generated_audio": true,
+  "show_pronunciation_score": true,
+  "linux_backend_fallback": "api"
+}
